@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week5_input.Jokenpo">
+    <ContentPage.Content>
+    
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="stone" ImageSource="stone.png" Grid.Row="1" Grid.Column="0" CornerRadius ="20"  HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" Clicked="Button_Clicked"/>
+            <Button Text="paper" ImageSource="paper.png" Grid.Row="1" Grid.Column="1" CornerRadius="20"  HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"  Clicked="Button_Clicked"/>
+            <Button Text="scissor" ImageSource="scissor.png" Grid.Row="1" Grid.Column="2" CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"  Clicked="Button_Clicked"/>
+
+            <Button x:Name="MachineButton" ImageSource="scissor.png" Grid.Row="2" Grid.Column="1" CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"/>
+
+            <StackLayout Grid.Row="3" Grid.ColumnSpan="3">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Player:" FontSize="25"/>
+                    <ProgressBar x:Name="BarPlayer" Progress="0.1" ProgressColor="Green" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Machine:" FontSize="25"/>
+                    <ProgressBar x:Name="BarMachine" Progress="0.1" ProgressColor="OrangeRed" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="Win" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+                   
+                </StackLayout>
+            </StackLayout>
+                
+            </Grid>
+   
+    </ContentPage.Content>
+</ContentPage>

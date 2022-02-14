@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week5_input.ImageButton">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+            <Button  ImageSource="me.jpg" x:Name="myImageButton" Clicked="Button_Clicked" BackgroundColor="Transparent"/>
+            <Button Text="Released Button"  Clicked="Button_Clicked_1"/>
+             <ProgressBar x:Name="Bar1" Progress="0.2"  ProgressColor="Gold" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
